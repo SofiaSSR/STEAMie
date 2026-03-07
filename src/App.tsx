@@ -16,11 +16,12 @@ import StoryMission from "./pages/StoryMission";
 import PhishingGame from "./pages/PhishingGame";
 import ComicStories from "./pages/ComicStories";
 import FamilyGuide from "./pages/FamilyGuide";
+import SecurityAvatar from "./pages/SecurityAvatar";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
-const PAGES_WITH_NAV = ['/dashboard', '/missions', '/badges', '/profile', '/story', '/game-phishing', '/comics'];
+const PAGES_WITH_NAV = ['/dashboard', '/missions', '/badges', '/profile', '/story', '/game-phishing', '/comics', '/security-avatar'];
 
 const AppContent = () => {
   const location = useLocation();
@@ -39,6 +40,7 @@ const AppContent = () => {
         <Route path="/game-phishing" element={<PhishingGame />} />
         <Route path="/comics" element={<ComicStories />} />
         <Route path="/family-guide" element={<FamilyGuide />} />
+        <Route path="/security-avatar" element={<SecurityAvatar />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       {showNav && <BottomNav />}

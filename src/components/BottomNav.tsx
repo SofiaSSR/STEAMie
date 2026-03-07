@@ -1,12 +1,12 @@
 import { useNavigate, useLocation } from 'react-router-dom';
-import { Home, Target, BookOpen, Award, User } from 'lucide-react';
+import { Home, Target, BookOpen, Award, Shield } from 'lucide-react';
 
 const navItems = [
   { path: '/dashboard', label: 'Inicio', icon: Home },
   { path: '/missions', label: 'Misiones', icon: Target },
   { path: '/comics', label: 'Cómics', icon: BookOpen },
   { path: '/badges', label: 'Insignias', icon: Award },
-  { path: '/profile', label: 'Perfil', icon: User },
+  { path: '/security-avatar', label: 'Seguridad', icon: Shield },
 ];
 
 const BottomNav = () => {
